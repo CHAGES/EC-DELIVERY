@@ -15,7 +15,7 @@ class Transportista extends CI_Controller {
         $data['hist'] = '';
         $data['pagos'] = '';
         $data['eval'] = '';
-        $this->load->view('dashboardt', $data);
+        $this->load->view('drivers/dashboardt', $data);
     }
 
     public function ofertas()
@@ -25,7 +25,7 @@ class Transportista extends CI_Controller {
         $data['hist'] = '';
         $data['pagos'] = '';
         $data['eval'] = '';
-        $this->load->view('listt', $data);
+        $this->load->view('drivers/listt', $data);
     }
     public function historial()
     {
@@ -34,7 +34,7 @@ class Transportista extends CI_Controller {
         $data['dash'] = '';
         $data['pagos'] = '';
         $data['eval'] = '';
-        $this->load->view('historialt', $data);
+        $this->load->view('drivers/historialt', $data);
     }
     public function pagos()
     {
@@ -43,7 +43,7 @@ class Transportista extends CI_Controller {
         $data['hist'] = '';
         $data['dash'] = '';
         $data['eval'] = '';
-        $this->load->view('pagost', $data);
+        $this->load->view('drivers/pagost', $data);
     }
     public function evaluaciones()
     {
@@ -52,7 +52,7 @@ class Transportista extends CI_Controller {
         $data['hist'] = '';
         $data['pagos'] = '';
         $data['dash'] = '';
-        $this->load->view('evaluacionest', $data);
+        $this->load->view('drivers/evaluacionest', $data);
     }
 }
 

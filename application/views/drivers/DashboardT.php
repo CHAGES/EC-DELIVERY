@@ -60,9 +60,9 @@
             <div class="card mt-4">
                 <div class="card-header">Accesos Rápidos</div>
                 <div class="card-body text-center">
-                    <a href="<?= base_url('/index.php/transportista/ofertas')?>"><button class="btn btn-primary">Ver Ofertas Disponibles</button></a>
-                    <a href="<?= base_url('/index.php/transportista/historial')?>"><button class="btn btn-secondary">Historial de Transportes</button></a>
-                    <a href="<?= base_url('/index.php/transportista/pagos')?>"><button class="btn btn-success">Gestión de Pagos</button></a>
+                    <a href="<?= base_url('/index.php/drivers/ofertas')?>"><button class="btn btn-primary">Ver Ofertas Disponibles</button></a>
+                    <a href="<?= base_url('/index.php/drivers/historial')?>"><button class="btn btn-secondary">Historial de Transportes</button></a>
+                    <a href="<?= base_url('/index.php/drivers/pagos')?>"><button class="btn btn-success">Gestión de Pagos</button></a>
                     
                 </div>
             </div>
