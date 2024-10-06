@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-$config['base_url'] = 'http://localhost/APP_EC-DELIVERY';
+$config['base_url'] = 'http://localhost:81/APP_EC-DELIVERY';
 
 
 /*
