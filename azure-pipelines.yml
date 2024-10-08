@@ -1,0 +1,20 @@
+trigger:
+- main  # Rama que activará el pipeline
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: UsePhp@0
+  inputs:
+    version: '7.4'
+
+- script: composer install --no-interaction --prefer-dist --optimize-autoloader
+  displayName: 'Install dependencies'
+
+- task: AzureAppServiceSettings@1
+  inputs:
+    azureSubscription: 'Azure for Students(0038a34c-fc9b-44da-bd48-7bfd8368962f)'
+    appName: 'ecdelivery'
+    resourceGroupName: 'miGrupoDeRecursos'
+    package: '$(System.DefaultWorkingDirectory)/**/*'
