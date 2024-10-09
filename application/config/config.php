@@ -24,7 +24,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-$config['base_url'] = 'http://localhost:/';
+if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
+    $config['base_url'] = "https://".$_SERVER['HTTP_HOST']."/";
+} else {
+    $config['base_url'] = "http://".$_SERVER['HTTP_HOST']."/";
+}
+
 
 
 /*
