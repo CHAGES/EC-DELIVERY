@@ -10,7 +10,7 @@ class Login extends CI_Controller {
 
     public function index()
     {
-        $this->load->view('dashboardt');
+        $this->load->view('drivers/DashboardT');
     }
 
     public function logout()
