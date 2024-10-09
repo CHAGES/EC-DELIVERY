@@ -1,5 +1,5 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
-<?php $this->load->view('barnav'); ?>
+<?php $this->load->view('Barnav'); ?>
 
     <div class="main--content">
         <div class="header--wrapper">
