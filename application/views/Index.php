@@ -24,8 +24,8 @@
   <div class="container mt-5 landing-container">
     <h1 class="landing-title">Bienvenido a EC-DELIVERY</h1>
     <p class="landing-description">Somos una plataforma que enlaza a empresas que necesitan transportar sus productos de forma segura y eficiente con transportistas capacitados para hacerlo.</p>
-    <a href="logint.html" class="btn btn-secondary landing-button">Registrarse como Transportista</a>
-    <a href="logine.html" class="btn btn-secondary landing-button">Registrarse como Empresa</a>
+    <a href="<?= base_url('/index.php/login')?>" class="btn btn-secondary landing-button">Registrarse como Transportista</a>
+    <a href="<?= base_url('/index.php/login')?>" class="btn btn-secondary landing-button">Registrarse como Empresa</a>
 
     <!-- Características destacadas -->
     <div class="features">
