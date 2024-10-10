@@ -17,15 +17,15 @@ class Companies extends CI_Controller {
     {
         $this->load->view('companies/CreateRequest');
     }
-    function historyTravel()
+    function historyTravelC()
     {
         $this->load->view('companies/HistoryTravel');
     }
-    function evaluationsT()
+    function evaluationsC()
     {
         $this->load->view('companies/EvaluaionsT');
     }
-    function paysE()
+    function paysC()
     {
         $this->load->view('companies/PaysE');
     }

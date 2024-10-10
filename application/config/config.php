@@ -25,9 +25,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
-    $config['base_url'] = "https://".$_SERVER['HTTP_HOST']."/";
+    $config['base_url'] = "https://".$_SERVER['HTTP_HOST'].substr($_SERVER['SCRIPT_NAME'], 0, strpos($_SERVER['SCRIPT_NAME'], basename($_SERVER['SCRIPT_FILENAME'])));
 } else {
-    $config['base_url'] = "http://".$_SERVER['HTTP_HOST']."/";
+    $config['base_url'] = "http://".$_SERVER['HTTP_HOST'].substr($_SERVER['SCRIPT_NAME'], 0, strpos($_SERVER['SCRIPT_NAME'], basename($_SERVER['SCRIPT_FILENAME'])));
 }
 
 

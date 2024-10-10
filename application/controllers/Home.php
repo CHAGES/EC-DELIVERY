@@ -10,8 +10,9 @@ class Home extends CI_Controller {
 
     public function index()
     {
-
+        $this->load->view('drivers/Listt');
     }
+    
 }
 
 /* End of file Home.php and path \application\controllers\Home.php */

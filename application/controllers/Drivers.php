@@ -1,7 +1,7 @@
 <?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Transportista extends CI_Controller {
+class Drivers extends CI_Controller {
 
     public function __construct()
     {
@@ -10,49 +10,28 @@ class Transportista extends CI_Controller {
 
     public function index()
     {
-        $data['dash'] = 'active';
-        $data['ofertas'] = '';
-        $data['hist'] = '';
-        $data['pagos'] = '';
-        $data['eval'] = '';
-        $this->load->view('drivers/dashboardt', $data);
+        $this->load->view('drivers/DashboardT');
     }
 
-    public function ofertas()
+    public function offers()
     {
-        $data['ofertas'] = 'active';
-        $data['dash'] = '';
-        $data['hist'] = '';
-        $data['pagos'] = '';
-        $data['eval'] = '';
-        $this->load->view('drivers/listt', $data);
+        
+        $this->load->view('drivers/Listt');
     }
-    public function historial()
+    public function historyTravelD()
     {
-        $data['hist'] = 'active';
-        $data['ofertas'] = '';
-        $data['dash'] = '';
-        $data['pagos'] = '';
-        $data['eval'] = '';
-        $this->load->view('drivers/historialt', $data);
+        
+        $this->load->view('drivers/Historialt');
     }
-    public function pagos()
+    public function paysD()
     {
-        $data['pagos'] = 'active';
-        $data['ofertas'] = '';
-        $data['hist'] = '';
-        $data['dash'] = '';
-        $data['eval'] = '';
-        $this->load->view('drivers/pagost', $data);
+        
+        $this->load->view('drivers/Pagost');
     }
-    public function evaluaciones()
+    public function evaluationsD()
     {
-        $data['eval'] = 'active';
-        $data['ofertas'] = '';
-        $data['hist'] = '';
-        $data['pagos'] = '';
-        $data['dash'] = '';
-        $this->load->view('drivers/evaluacionest', $data);
+        
+        $this->load->view('drivers/Evaluacionest');
     }
 }
 
